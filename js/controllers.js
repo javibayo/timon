@@ -1,11 +1,11 @@
-var phonecatControllers = angular.module('phonecatControllers', []);
+var timonControllers = angular.module('timonControllers', []);
  
-phonecatControllers.controller('MainCtrl', ['$scope', '$http',
+timonControllers.controller('MainCtrl', ['$scope', '$http',
   function ($scope, $http) {
 	$scope.$emit('someEvent', false);
   }]);
  
-phonecatControllers.controller('FoodCtrl', ['$scope', '$routeParams',
+timonControllers.controller('FoodCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.$emit('someEvent', true);
 	$scope.menus = [
@@ -66,10 +66,13 @@ phonecatControllers.controller('FoodCtrl', ['$scope', '$routeParams',
 				{name: 'Tiramisú', price: '4.50', description: '', titulo: false, unit:'€'},
 			]}
 	];
+	
+	$scope.page = "food";
+	
   }]);
   
   
-  phonecatControllers.controller('BeerCtrl', ['$scope', '$routeParams',
+  timonControllers.controller('BeerCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.$emit('someEvent', true);
 	
@@ -83,29 +86,60 @@ phonecatControllers.controller('FoodCtrl', ['$scope', '$routeParams',
 				{name: 'Cune Crianza', price: '19.50', description: '', titulo: false, unit:'€'}
 			]}
 	];
+	
+	$scope.page = "beer";
+  }]);
+  
+  timonControllers.controller('MenuDiaCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+	$scope.$emit('someEvent', true);
+     
+	 $scope.menus = [
+			{name: 'Primeros', elements: [
+				{name: 'Salmorejo cordobes', titulo: false},
+				{name: 'Migas del pastor', titulo: false},
+				{name: 'Callos con garbanzos', titulo: false},
+				{name: 'Ensalada de queso de cabra', titulo: false},
+				{name: 'Revuelto de morcilla', titulo: false}
+			]},
+			{name: 'Segundos', elements: [
+				{name: 'Entraña', titulo: false},
+				{name: 'Pollo asado a la provenzal', titulo: false},
+				{name: 'Emperador', titulo: false},
+				{name: 'Filetes rusos con cebolla caramelizada', titulo: false}
+			]},
+			{name: 'Postres', elements: [
+				{name: 'Sorbete de limón al cava', titulo: false},
+				{name: 'Tarta al whisky', titulo: false},
+				{name: 'Couland de chocolate con helado de vainilla', titulo: false},
+				{name: 'Flan casero de nata con frutos rojos', titulo: false}
+			]},
+	];
+	 $scope.page = "menudia";
+  }]);
+  
+  timonControllers.controller('GruposCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+	$scope.$emit('someEvent', true);
+     
   }]);
 
-  phonecatControllers.controller('BlogCtrl', ['$scope', '$routeParams',
+  timonControllers.controller('ContactCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.$emit('someEvent', true);
   }]);
 
-  phonecatControllers.controller('ContactCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.$emit('someEvent', true);
-  }]);
-
-  phonecatControllers.controller('ReservationCtrl', ['$scope', '$routeParams',
+  timonControllers.controller('ReservationCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.$emit('someEvent', true);
   }]);
   
-  phonecatControllers.controller('AboutCtrl', ['$scope', '$routeParams',
+  timonControllers.controller('AboutCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.$emit('someEvent', true);
   }]);
 
- phonecatControllers.controller('BodyCtrl', ['$scope', '$routeParams',
+ timonControllers.controller('BodyCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
 	$scope.$on('someEvent', function(event, args) {
 		$scope.boolChangeClass = args;
@@ -113,7 +147,9 @@ phonecatControllers.controller('FoodCtrl', ['$scope', '$routeParams',
      
   }]);
   
-  phonecatControllers.controller('mapCtrl', ['$scope', '$routeParams',
+  
+  
+  timonControllers.controller('mapCtrl', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     $scope.$emit('someEvent', true);
 	

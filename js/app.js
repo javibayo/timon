@@ -1,6 +1,6 @@
-var phonecatApp = angular.module('phonecatApp', [ 'ngRoute','phonecatControllers']);
+var timonApp = angular.module('timonApp', [ 'ngRoute','timonControllers']);
 
-phonecatApp.config(['$routeProvider',
+timonApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/main', {
@@ -15,10 +15,6 @@ phonecatApp.config(['$routeProvider',
         templateUrl: 'beer.html',
         controller: 'BeerCtrl'
       }).
-	  when('/blog', {
-        templateUrl: 'blog.html',
-        controller: 'BlogCtrl'
-      }).
 	  when('/contact', {
         templateUrl: 'contact.html',
         controller: 'ContactCtrl'
@@ -30,6 +26,14 @@ phonecatApp.config(['$routeProvider',
 	  when('/reservation', {
         templateUrl: 'reservation.html',
         controller: 'ReservationCtrl'
+      }).
+	  when('/menudia', {
+        templateUrl: 'menu-dia.html',
+        controller: 'MenuDiaCtrl'
+      }).
+	  when('/grupos', {
+        templateUrl: 'grupos.html',
+        controller: 'GruposCtrl'
       }).
 	  otherwise({
         redirectTo: '/main'

@@ -1,4 +1,4 @@
-phonecatApp.directive('menuItems', function() {
+timonApp.directive('menuItems', function() {
 	
 
 	return {
@@ -14,7 +14,7 @@ phonecatApp.directive('menuItems', function() {
 });
 
 
-phonecatApp.directive('menuElements', function() {
+timonApp.directive('menuElements', function() {
 	return {
     
 		template:
@@ -22,11 +22,11 @@ phonecatApp.directive('menuElements', function() {
 					'<ul>'+
 						'<li ng-repeat="item in menu.elements" class="last">'+
 								'<div ng-if="true == item.titulo">'+
-									'<h2 class="subtitle" ><a href="#/food"><b>{{item.name}}</b></a></h2>'+
+									'<h2 class="subtitle" ><a href="#/{{page}}"><b>{{item.name}}</b></a></h2>'+
 									'<span>{{item.price}} {{item.unit}}</span>'+
 								'</div>'+
 								'<div ng-if="false == item.titulo">'+
-									'<h2 class="item"><a href="#/food">{{item.name}}</a></h2>'+
+									'<h2 class="item"><a href="#/{{page}}">{{item.name}}</a></h2>'+
 										'<span>{{item.price}} {{item.unit}}</span>'+
 										'<p>'+
 											'{{item.description}}'+

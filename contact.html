@@ -2,33 +2,36 @@
 
 <div class="content">
 	<div class="body">
-		<h2>CONTACT US</h2>
+		<h2>DONDE ESTAMOS</h2>
 		<ul>
 			<li>
-				<h4>You can replace all this text with your own text</h4>
+				<h4>Restaurante ubicado en Ajalvir</h4>
 				<p>
-					This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text
-				You can remove any links to our website from this website template, you're free to use this website template without linking back to us.
-				If you're having a problems editing this temlate, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums">Forums</a>.
+					Este restaurante se encuentra ubicado en la localidad madrileña de Ajalvir. Está localizado a 26 Kilómetros de Madrid capital y a 12 kilómetros de Alcalá de Henares. Esta localidad, tiene como puntos de interés la Iglesia de la Purísima Concepción, la Ermita de San Roque y la Ermita de la Soledad. 
 				</p>
 			</li>
 		</ul>
-		<div id="contact">
-			<div class="container main-frame" ng-app="WebApp" ng-controller ="mapCtrl" ng-init="init()">
-			  <div id="map-canvas"/>
-			</div>
-			<div id="map_canvas"></div>
-			<label><span>Dirección </span>:Calle Soria, 1, CP 28864 Ajalvir</label>
-			<label><span>Horario</span>:
-			Lun - Jue: 8:00 - 18:00
-			Vie - Sáb: 8:00 - 0:00
-			</label>
-			<label><span>Telefono de contacto</span>:(+34) 633 07 09 11</label>
-			<label><span>Opciones de pago</span>:
-			Visa
-			Mastercard
-			Efectivo
-			</label>
+		<div id="map_canvas" class="localization_map" ng-app="WebApp" ng-controller ="mapCtrl" ng-init="init()">
+		  
+		</div>
+		<br>
+		<div id="contact" class="contact_timon">
+			
+			<label class="contact_info">Dirección:</label>
+			<label class="label_contact_info">Calle Soria, 1, CP 28864 Ajalvir</label>
+			<label class="contact_info">Horario:</label>
+			<ul class="payment_types">
+					<li class="label_contact_info_list">Lun - Jue: 8:00 - 18:00</li>
+					<li class="label_contact_info_list">Vie - Sáb: 8:00 - 0:00</li>
+			</ul>
+			<label class="contact_info">Telefono de contacto:</label>
+			<label class="label_contact_info">(+34) 633 07 09 11</label>
+			<label class="contact_info">Opciones de pago:</label>
+			<ul class="payment_types">
+					<li class="label_contact_info_list">Visa</li>
+					<li class="label_contact_info_list">Mastercard</li>
+					<li class="label_contact_info_list">Efectivo</li>
+			</ul>
 			
 		</div>
 	</div>

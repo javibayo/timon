@@ -1,0 +1,87 @@
+.menu_text{
+	text-align: left;
+}
+
+.article_index{
+	width: 100% !important;
+}
+
+.localization_map{
+	float:left;
+}
+
+.contact_timon{
+	float:left;
+	width:30%;
+	padding-left: 20px;
+}
+
+.contact_info {
+	font-weight:bold;
+	font-size:14px;
+	display:inline-block;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	padding: 0px !important;
+}
+
+.label_contact_info {
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	padding-left:10px !important;
+}
+.label_contact_info_list{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	margin-bottom: 0px !important;
+}
+
+.payment_types{
+	margin: 0;
+	padding-left: 30px !important;
+	list-style-type: square !important;
+}
+.payment_types_element{
+	overflow: hidden;
+}
+.telefono_contacto{
+	font-weight:bold;
+	font-size:22px;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#reservas{
+	padding-top: 20px;
+}
+
+#info_reservas{
+	float:left;
+	padding-left:40px;
+	max-width:270px;
+}
+
+.reservation_par{
+	padding-bottom: 10px;
+}
+
+.lista_carta{
+	width:1250px !important;
+	
+}
+
+.opciones_carta{
+	margin: 0 auto;
+}
+
+#grupos{
+	padding-top: 20px;
+}
+
+#info_grupos{
+	float:left;
+	padding-right:40px;
+	max-width:270px;
+}
+
+.grupos_par{
+	padding-bottom: 10px;
+}
